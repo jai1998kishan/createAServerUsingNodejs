@@ -1,3 +1,9 @@
+// Based on the url the user hits , I want you to return custom responses.
+// When url = /home , return response ==> Welcome home
+// When url = /about, return response ==> Welcome to About Us page
+// When url =/node, return response ==> Welcome to my Node Js project
+
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
