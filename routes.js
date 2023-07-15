@@ -39,5 +39,19 @@ const requestHandler=(req,res)=>{
     
 }
 
-module.exports=requestHandler;
+//ways 1 to export the file
+// module.exports=requestHandler;
+
+//way 2 to export the file
+module.exports={
+    handler:requestHandler,
+    someText:'Some hard coded text'
+}
+
+//way 3 to export the file
+// module.exports.handler=requestHandler;
+// module.exports.someText='Some hard coded text in way 3';
+// //short for above code
+// exports.handler=requestHandler;
+// exports.someText='Some hard coded text in way 3';
 
